@@ -1,0 +1,21 @@
+<%= form_for(@task) do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <%= f.label :details %>
+  <%= f.text_field :details %>
+  <%= f.label :completed %>
+  <%= f.check_box :completed %>
+  <%= f.submit %>
+<% end %>
+
+<!-- <form class="new_task" id="new_task" action="/tasks" accept-charset="UTF-8" method="post">
+  <input type="hidden" name="authenticity_token" value="fUrBymmVzFG49YTQE9xKfohttEtW7eHnui2WT6KWpRXT6g9dz73lhZ7bRdHH+RuV/TFoB23OG5l1eo731o8l6g==">
+  <label for="task_title">Title</label>
+  <input type="text" name="task[name]" id="task_name">
+  <label for="task_detail">Details</label>
+  <input type="text" name="restaurant[address]" id="restaurant_address">
+  <label for="restaurant_rating">Rating</label>
+  <input type="number" name="restaurant[rating]" id="restaurant_rating">
+  <input type="submit" name="commit" value="Create Restaurant" data-disable-with="Create Restaurant">
+</form>
+ -->
